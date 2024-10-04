@@ -1,0 +1,88 @@
+body{
+
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+
+}
+
+/* Alinhando caixa principal no centro da tela */
+section #alignment{
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* Caixa pequena */
+.littleBox{
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    width: 10vw;
+
+}
+
+/* Estilização do texto */
+
+h1{
+
+    font-size: 3.5vw;
+    font-weight: unset;
+
+}
+
+.littleBox span,
+h1{text-align: center;}
+
+.littleBox span{
+
+    color: #808080;
+    display: block;
+    margin-top: 12px;
+    text-align: center;
+
+}
+.littleBox:hover span{color: #fff;}
+
+/* Imagem */
+.littleBox img{
+
+    border-radius: 4px;
+    display: flex;
+    width: 10vw;
+
+    position: relative;
+    z-index: -1;
+
+}
+.littleBox:hover .imghover{border: 2px solid #fff;}
+
+/* Estilização do icone de add */
+.littleBox #addPattern{
+
+    margin: 2vw 0 0 1vw;
+    width: 7vw;
+
+}
+
+button{
+
+    background-color: transparent;
+    border: 1px solid grey;
+    color: grey;
+    cursor: pointer;
+    margin-top: 7vw;
+    padding: 0.5em 1.5em;
+
+}
+
+button:hover{
+
+    border: 1px solid #fff;
+    color: #fff;
+
+}

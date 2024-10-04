@@ -1,0 +1,339 @@
+/* Visibilidade da barra controlado no js */
+
+#visivel{
+
+    background: #080808;
+    transition: background 4s;
+
+}
+
+#naovisivel{
+
+    background: transparent;
+    transition: background 4s;
+
+}
+
+/* Caixa geral do header */
+
+header{
+
+    background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0)),
+    url(https://occ-0-933-420.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWMZa8iWRT8VWOH6tIdbS_gfxSRLwxaMw7QiiBwy-V-q52w2yA5aNeyVqGNrbS2MMXYV8o39ofeoVPFmmNYs7oqwj7yISMASgvQz.webp?r=618)no-repeat;
+    background-size: cover;
+	height: 100vh;
+
+}
+
+/* Alinhando os elementos das listas  */
+
+#firstBox,
+#rightBox{
+
+    align-items: center;
+    display: flex;
+
+}
+
+/* Primeira lista */
+
+/* Caixa de navegação da primeira lista */
+
+.mainNavigation{
+
+    align-items: center;
+    background: transparent;
+    display: flex;
+    font-size: 1em;
+    height: 70px;
+    justify-content:space-between;
+    padding: 0 3%;
+    position: fixed;
+    transition: background 4s;
+    z-index: 1;
+    width: 94%;
+
+}
+
+/* Estilo que indica a página atual */
+
+#responsiveNone .responsiveNone__selected{
+    
+    color: #fff;
+    cursor: default;
+}
+
+
+/* Estilizando os links */
+
+#responsiveNone a{
+
+    color: rgb(229, 229, 229);
+    margin-left: 15px;
+    transition: color .4s;
+
+}
+#responsiveNone a:hover{color:gray;}
+
+/* Segunda lista */
+
+/* Caixa principal da segunda lista */
+#subListTwo{
+
+    background: rgb(16 16 16);
+    border: 1px solid #242424;
+    display: none;
+    position:absolute;
+    right: 3%;
+    width: 205px;
+
+}
+
+/* Tag <li> do perfil logado*/
+#listTwo{
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0;
+
+}
+
+/* Seta do lado do perfil logado */
+
+#arrow{
+
+    margin-left: 10px;
+    transform: rotate(180deg);
+
+}
+
+#listTwo:hover #arrow{
+
+    animation-name: loading;
+    animation-duration:0.4s;
+    transform: rotate(0deg);
+
+}
+
+@keyframes loading {
+	from{
+		transform: rotate(180deg);
+	}
+	to{
+		transform: rotate(0deg);
+	}
+}
+
+/* Tag <li> da segunda lista */
+
+#subListTwo .listTwo__li{
+
+    display: block;
+    font-size: 0.9em;
+    margin: 10px 0 0 10px;
+
+}
+
+/* Seta que fica na lista da caixa dropDown */
+#subListTwo:hover,
+#user_list:hover{display: block;}
+
+#user_list:hover#user_list:before{
+
+    content:url(https://img.icons8.com/fluency-systems-filled/12/ffffff/triangle.png);
+    position: absolute;
+    right:160px;
+    top: 50px;
+    
+}
+
+
+#subListTwo a:hover{text-decoration: underline;}
+
+/* Botão de pesquisa */
+
+#search{float: left;}
+
+/* Estilização do botão */
+
+#searchBut{
+
+    background-color: Transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    vertical-align: middle;
+
+}
+
+/* Input pesquisa */
+
+#searchtBoxInt__pesq{
+    
+    background: none;
+    border:0;
+    color:white;
+    outline: 0;
+    transition: width 200ms;
+    width: 0px;
+
+}
+
+/* estilo controlado pelo js */
+.search_box_styling{
+
+    padding: 5px;
+    border: 1px solid #fff;
+    background: #080808;
+
+}
+
+/* Botão para a seção ifantil */
+
+#childrensButton{
+    
+    color: #fff;
+    font-size:0.9em;
+    font-weight: 400;
+
+}
+
+/* Parte das notificações */
+
+#alertNotification{
+
+    background: #b9090b;
+    border-radius: 20px;
+    color:#fff;
+    font-size: 0.8em;
+    height: 17px;
+    margin-left: 14px;
+    position: absolute;
+    position: absolute;
+    text-align: center;
+    width: 17px;
+
+}
+
+#notification{padding: 30px 0px;}
+
+#notificationBox{
+
+    align-items: center;
+    border-bottom: 1px solid #313131;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 18px 3px;
+
+}
+
+/* Caixa que irá se abrir no camppo de notificação */
+
+/* Alinhando caixas */
+
+.alinhamento{
+
+    align-items: center;
+    /*border-bottom: 1px solid #5e5d5d;*/
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-evenly;
+    padding: 16px 0;
+
+}
+
+#openNotificationBox img{
+
+    border-radius: 5px;
+    width: 40%;
+
+}
+
+#openNotificationBox{
+
+    background: #000000de;
+    border-top: 3px solid #fff;
+    color: #fff;
+    display: none;
+    position: absolute;
+    padding: 1px 5px;
+    right: 96px;
+    top: 100%;
+    width: 400px;
+    
+}
+
+#notification:hover #openNotificationBox{display: block;}
+
+#openNotificationBox h2{
+
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0;
+
+}
+
+#openNotificationBox span{
+
+    color: #818181;
+    font-size: 0.8em;
+
+}
+
+/* Seta da caixa */
+#openNotificationBox:before{
+
+    content:url(https://img.icons8.com/fluency-systems-filled/12/ffffff/triangle.png);
+    position: absolute;
+    top: -19px;
+    right: 107px;
+    
+}
+
+/* Foto de perfil */
+#profile-icon{
+
+    border-radius: 3px;
+    width: 27px;
+
+}
+
+/* li da segunda lista */
+#subListTwo .listTwo__li:nth-child(7){margin-bottom: 14px;}
+#subListTwo .listTwo__li:nth-child(1){margin-top: 17px;}
+#subListTwo .listTwo__li:nth-child(8){
+
+    border-top: 1px solid #5e5d5d;
+    padding:10px 0 ;
+    text-align: center;
+    margin: 0;
+
+}
+
+/* Fotos dos usuarios */
+#subListTwo .listTwo__li img{
+
+    border-radius: 3px;
+    margin-right: 10px;
+    vertical-align: middle;
+
+}
+
+/*Alinhando elementos da segunda lista*/
+
+#rightBox__search,
+#childrensButton,
+#user_list,
+#notification{margin-left: 15px;}
+
+/* Quando ficar responsivo */
+
+/* tag <li> da primeira lista */
+
+#liResponsive{display: none;}
+
+/* Sub lista dos usuarios logados aparecerá */
+#user_list:hover #subListTwo{display:block;}

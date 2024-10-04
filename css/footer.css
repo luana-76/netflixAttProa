@@ -1,0 +1,91 @@
+
+footer{
+
+    background: #000;
+    height: 450px;
+    margin: 0;
+    width: 100vw;
+
+}
+
+#conteudoFooter{
+
+    bottom: -190px;
+    color: #ababab;
+    font-size: 0.9em;
+    margin-left: 150px;
+    position: relative;
+
+}
+
+#conteudoFooter a{
+
+    color: #ababab;
+    font-size: inherit;
+
+}
+
+/* Link telefone */
+#telefone{font-size: 1.1em;}
+
+#numero:hover,
+#linkNew a:hover,
+#linkAzul:hover{
+
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+/* Parte do select */
+
+#conteudoFooter svg{
+
+    color: #fff;
+    position:absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+select{
+
+    border-radius: 5px;
+    border: 1px solid rgb(62, 62, 62);
+    background: #171717c0;
+    color: #fff;
+    font-size: 1em;
+    height: 40px;
+    padding-left: 30px;
+    width: 153px; 
+    
+}
+select:focus{border: 2px solid #fff;}
+
+option {
+
+    background-color: #fff;
+    color: #000;
+
+}
+
+/* Lista do footer */
+
+ul{
+
+    display: inline-block;
+    list-style: none;
+    margin-right: 90px;
+    vertical-align: middle;
+
+}
+
+footer ul li{
+
+    display: block;
+    cursor: pointer;
+    margin: 25px 0;
+
+}
+
+footer ul li a{text-decoration: underline;}

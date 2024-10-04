@@ -1,0 +1,100 @@
+/* Caixa principal*/
+#seriesOfTheMoment{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100vh;
+    justify-content: center;
+    margin-left: 50px;
+    
+}
+
+/* Imagem do titulo */
+#seriesOfTheMoment #title{width: 398px;}
+
+/*  Botões */
+
+#playBut img,
+#information img{
+    
+    margin-right: 10px;
+    vertical-align: middle;
+
+}
+
+/* Botão de play do filme */
+#playBut{
+
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size:1em;
+    font-weight: 700;
+    padding: 4px;
+    width:133px;
+    
+}
+
+#playBut:hover{
+    
+    background: rgb(207, 207, 207);
+    transition: color .4s;
+
+}
+
+/* Botão de informação da serie */
+
+#information{
+
+    background-color: rgba(109,109,110,0.7);
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 7px 18px;
+    width: 188px;
+    
+}
+
+#information:hover{background: rgb(56, 56, 56); transition: color .4s;}
+
+/* video de fundo */
+
+#tagVideo{
+
+    display: flex;
+    position: absolute;
+    width:100%;
+    z-index: -1;
+
+}
+
+/* Caixa do botão de som */
+#soundBox{
+
+    border: 1px solid #fff;
+    border-radius: 47px;
+    display:inline-block;
+    position: absolute;
+    right: 50px;
+    width: 34px; height: 34px;
+
+}
+
+/* Botão de controle de som*/
+
+#mute{
+
+    border:none;
+    background: transparent;
+    cursor:pointer;
+    outline: none;
+
+}
+
+/* Imagem do botão de som */
+#muteImg{margin: 5px 10px 0 2px;}
+
